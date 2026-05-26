@@ -15,7 +15,7 @@ multimodal retrieval without sacrificing cross-lingual capabilities.
 
 ## Installation
 ```bash
-pip install -r requirements.txt
+uv sync
 ````
 
 ## Workflow
@@ -24,14 +24,14 @@ pip install -r requirements.txt
 
 Run the training script to generate the PyTorch checkpoint:
 ```bash
-python train.py
+uv run train.py
 ```
 
 ### 2. Export & Optimization
 
 Convert the model to ONNX and apply dynamic quantization for edge deployment:
 ```bash
-python export_onnx.py
+uv run export_onnx.py
 ```
 
 ### 3. Inference

@@ -20,10 +20,6 @@ dependencies = [
     "optimum>=2.1.0",
 ]
 
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
 [tool.ruff]
 line-length = 80
 target-version = "py310"
