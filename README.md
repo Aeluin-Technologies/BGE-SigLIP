@@ -9,9 +9,12 @@ multimodal retrieval without sacrificing cross-lingual capabilities.
 
 ## Features
 
-* **Unified Vector Space:** Images and text are projected into the exact same 1024-d space.
-* **Native Cross-Lingual Support:** Search images using queries in 100+ languages out-of-the-box.
-* **Asymmetric Contrastive Fine-Tuning:** Preserving the rich textual semantic depth of BGE-M3.
+* **Unified Vector Space:** Images and text are projected into the exact same
+    1024-d space.
+* **Native Cross-Lingual Support:** Search images using queries in 100+
+    languages out-of-the-box.
+* **Asymmetric Contrastive Fine-Tuning:** Preserving the rich textual semantic
+    depth of BGE-M3.
 
 ## Installation
 ```bash
@@ -38,3 +41,14 @@ uv run export_onnx.py
 
 Use `demo.ipynb` to test the model with your own images and visualize embedding
 alignment.
+
+## Attributions & Licenses
+
+This model, BGE-SigLIP, is a derivative work created by fine-tuning and
+combining components from the following models:
+* SigLIP-2 (Vision Encoder): Developed by Google, licensed under the Apache
+    License 2.0.
+* BGE-M3 (Text Encoder): Developed by BAAI, licensed under the MIT License.
+
+The code and model weights for BGE-SigLIP are distributed under the CC BY-NC-SA
+4.0 license.
