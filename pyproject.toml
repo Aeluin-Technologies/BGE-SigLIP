@@ -1,0 +1,41 @@
+[project]
+name = "bge-siglip"
+version = "0.1.0"
+description = "Fine-tuning SigLip2 for BGE-M3 embedding alignment."
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.12.0",
+    "torchvision>=0.27.0",
+    "transformers>=5.9.0",
+    "accelerate>=1.13.0",
+    "sentence-transformers>=5.5.1",
+    "pandas>=3.0.3",
+    "pillow>=12.2.0",
+    "tqdm>=4.67.3",
+    "onnx>=1.21.0",
+    "onnxruntime>=1.26.0",
+    "onnxsim>=0.6.3",
+    "onnxscript>=0.7.0",
+    "onnxruntime-tools>=1.7.0",
+    "optimum>=2.1.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 80
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.14",
+]

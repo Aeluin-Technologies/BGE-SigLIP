@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*.pt
+*.onnx
+data/flickr30
+.ipynb_checkpoints/
+.venv
